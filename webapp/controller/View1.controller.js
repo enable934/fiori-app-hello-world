@@ -9,6 +9,6 @@ function (Controller, MessageBox) {
         onInit: function () {
 
         },
-        onPress: function () { MessageBox.alert("Heellos")}
+        onPress: function () { MessageBox.alert("Heelloss")}
     });
 });
