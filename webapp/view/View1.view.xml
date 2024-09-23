@@ -4,7 +4,7 @@
     <Page id="page" title="{i18n>title}">
         <content>
             <FlexBox id="testBox">
-                <Text text="Test text" id="testText" />
+                <Text text="Test text 1" id="testText" />
                 <Button xmlns="sap.m" text="Don't click" id="testBtn" press=".onPress"/>
             </FlexBox>
         </content>
