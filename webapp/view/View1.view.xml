@@ -3,9 +3,16 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <content>
-            <FlexBox id="testBox">
-                <Text text="Test text 1" id="testText" />
-                <Button xmlns="sap.m" text="Don't click" id="testBtn" press=".onPress"/>
+            <FlexBox id="testFlexBox" height="100px" alignItems="Center" justifyContent="Center">
+                <ObjectStatus
+                id="counterValue"
+							class="sapUiSmallMarginEnd"
+							text="You clicked {/counter} times"
+							icon="sap-icon://information"
+							state="Information" />
+                <Button xmlns="sap.m" type="Reject" class="sapUiSmallMarginEnd" text="Reset counter" id="clearCounterBtn" press=".onFirstBtnPress"/>
+                <Button xmlns="sap.m" type="Emphasized" class="sapUiSmallMarginEnd" text="Click on me" id="showCounterBtn" press=".onSecondBtnPress" ariaHasPopup="Dialog"/>
+                <Button xmlns="sap.m" class="sapUiSmallMarginEnd" text="Increase on 1000" id="increaseCounter" press=".onThirdBtnPress"/>
             </FlexBox>
         </content>
     </Page>
