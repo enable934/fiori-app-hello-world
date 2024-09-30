@@ -7,7 +7,7 @@
                 <ObjectStatus
                 id="counterValue"
 							class="sapUiSmallMarginEnd"
-							text="You clicked {/counter} times"
+							text="Counter value is {/counter}"
 							icon="sap-icon://information"
 							state="Information" />
                 <Button xmlns="sap.m" type="Reject" class="sapUiSmallMarginEnd" text="Reset counter" id="clearCounterBtn" press=".onFirstBtnPress"/>
